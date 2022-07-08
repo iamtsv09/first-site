@@ -1,0 +1,11 @@
+@use 'var.scss';
+@mixin base-width {
+    max-width: 1170px;
+    margin: auto;
+    padding: 130px 0;
+}
+
+@mixin hover-blue-color {
+    color: var.$secondary-color;
+    transition: all 1s;
+}

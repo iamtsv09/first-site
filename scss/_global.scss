@@ -1,0 +1,117 @@
+@use 'var';
+@use 'mixins.scss';
+.logo {
+    margin-left: 3px;
+    a {
+        text-decoration: none;
+        font-family: var.$main-font;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+        .nex {
+            color: var.$secondary-color;
+            background-color: #00a6a62b;
+            border-radius: 50% 0 0 50%;
+            padding: 13px 2px 17px 30px;
+        }
+        .gen {
+            color: var.$primary-color;
+        }
+    }
+}
+.info-link {
+    a {
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+    &:hover,
+    &:hover a {
+        @include mixins.hover-blue-color;
+    }
+}
+.btn {
+    background-color: var.$dark-blue-color;
+    color: #f9f9f9;
+    font-family: var.$main-font;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var.$dark-blue-color;
+    text-decoration: none;
+
+    &-secondary {
+        background-color: #05838300;
+    }
+
+    &:hover {
+        background-color: var.$secondary-color;
+        transition: all 1s;
+        color: #f9f9f9 !important;
+    }
+}
+.text-light-grey {
+    font-family: var.$main-font;
+    font-size: 1rem;
+    color: var.$primary-color;
+}
+.text-blue {
+    font-family: var.$main-font;
+    color: var.$secondary-color;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.text-with-bg {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: var.$dark-blue-color;
+    background-color: #daeced;
+    border-radius: 4px;
+    padding: 5px 15px;
+
+    &-second {
+        color: white;
+        background-color: #0e272d;
+    }
+    &-third {
+        color: white;
+        background-color: #00a6a62e;
+    }
+}
+.text-dark-grey {
+    font-family: var.$main-font;
+    font-size: 1rem;
+    color: #606d75;
+    font-weight: 400;
+}
+h4 {
+    font-family: var.$main-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #21333e;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.boxes {
+    div {
+        background-color: #19191f;
+        padding: 45px;
+        border-radius: 10px;
+        margin: 17px 0 10px;
+        &:hover {
+            margin: 10px 0 17px;
+            transition: 1s;
+        }
+        h4 {
+            margin: 24px 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: white;
+        }
+    }
+}

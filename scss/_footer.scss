@@ -1,0 +1,32 @@
+@use 'mixins.scss';
+@use 'var.scss';
+footer {
+    background-color: #0d0d11;
+    .footer-content {
+        @include mixins.base-width;
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        .text-light-grey {
+            font-size: 0.875rem;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: var.$dark-blue-color;
+            }
+        }
+    }
+}
+@media (max-width: var.$first-max-width) {
+    .footer-content {
+        padding: 32px 3% !important;
+    }
+}
+@media (max-width: 765px) {
+    .footer-content {
+        flex-direction: column;
+        .text-light-grey {
+            margin: 16px 0;
+        }
+    }
+}
